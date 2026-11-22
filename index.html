@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieLand - The Ultimate Cinema Catalog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo"><b>MovieLand!</b></div>
+
+    <input type="checkbox" id="menu-toggle">
+
+    <label for="menu-toggle" class="menu-icon">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-xmark"></i>
+    </label>
+
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#toys">Movies</a></li>
+        <li><a href="#collections">Genres</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="login.html" class="login-btn">Login</a></li>
+    </ul>
+</nav>
+
+
+<section class="home" id="home">
+
+    <div class="home-content">
+        <h1>Welcome to <span>MovieLand!</span></h1>
+
+        <h2>Where Every Story Comes Alive</h2>
+
+        <p>
+            Discover an exciting universe of blockbuster movies, action spectacles,
+            epic adventures and timeless romance. Experience cinema magic with our
+            curated collection of films.
+        </p>
+
+        <a href="#toys" class="btn">Explore Movies</a>
+    </div>
+
+</section>
+
+
+<section class="toys" id="toys">
+
+    <h2 class="heading">Our <span>Movies</span></h2>
+
+    <p class="section-description">
+        Explore our exciting collection of trending movies.
+    </p>
+
+    <div class="toy-container">
+
+        <div class="toy-card">
+            <img src="images/movie_spiderman.jpg" alt="Spider-Man">
+            <h3>Spider-Man</h3>
+            <p>Miles Morales catapults across the Multiverse to save his world.</p>
+            <h4>₹299</h4>
+            <a href="spiderman.html" class="btn">View details</a>
+        </div>
+
+        <div class="toy-card">
+            <img src="images/movie_batman.jpg" alt="The Dark Knight">
+            <h3>The Dark Knight</h3>
+            <p>Batman faces his greatest test as the Joker unleashes chaos in Gotham.</p>
+            <h4>₹249</h4>
+            <a href="batman.html" class="btn">View details</a>
+        </div>
+
+        <div class="toy-card">
+            <img src="images/movie_ironman.jpg" alt="Avengers: Endgame">
+            <h3>Avengers: Endgame</h3>
+            <p>The universe's remaining heroes assemble for an epic final showdown.</p>
+            <h4>₹349</h4>
+            <a href="avengers.html" class="btn">View details</a>
+        </div>
+
+        <div class="toy-card">
+            <img src="images/movie_avatar.jpg" alt="Avatar: The Way of Water">
+            <h3>Avatar 2</h3>
+            <p>Jake Sully and Neytiri fight to protect Pandora's oceans.</p>
+            <h4>₹299</h4>
+            <a href="avatar.html" class="btn">View details</a>
+        </div>
+
+        <div class="toy-card">
+            <img src="images/movie_deadpool.jpg" alt="Deadpool & Wolverine">
+            <h3>Deadpool</h3>
+            <p>A witty Wade Wilson pairs up with a reluctant Wolverine.</p>
+            <h4>₹299</h4>
+            <a href="deadpool.html" class="btn">View details</a>
+        </div>
+
+        <div class="toy-card">
+            <img src="images/movie_joker.jpg" alt="Joker">
+            <h3>Joker</h3>
+            <p>Arthur Fleck navigates the dark corridors of Arkham finding kindred spirit.</p>
+            <h4>₹249</h4>
+            <a href="joker.html" class="btn">View details</a>
+        </div>
+
+        <div class="toy-card">
+            <img src="images/movie_harrypotter.jpg" alt="Harry Potter">
+            <h3>Harry Potter</h3>
+            <p>Harry, Ron and Hermione race against time to destroy the Horcruxes.</p>
+            <h4>₹199</h4>
+            <a href="harrypotter.html" class="btn">View details</a>
+        </div>
+
+        <div class="toy-card">
+            <img src="images/movie_wonderwoman.jpg" alt="Wonder Woman">
+            <h3>Wonder Woman</h3>
+            <p>An Amazonian princess leaves her sheltered home to fight world conflict.</p>
+            <h4>₹229</h4>
+            <a href="wonderwoman.html" class="btn">View details</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="collections" id="collections">
+
+    <h2 class="heading">Movie <span>Genres</span></h2>
+
+    <p class="section-description">
+        Find the perfect movie for every little explorer and movie fan.
+    </p>
+
+    <div class="collection-container">
+
+        <div class="collection-card">
+            <img src="images/genre_action.jpg" alt="Action Movies">
+            <h3>Action</h3>
+        </div>
+
+        <div class="collection-card">
+            <img src="images/genre_thriller.jpg" alt="Thriller Movies">
+            <h3>Thriller</h3>
+        </div>
+
+        <div class="collection-card">
+            <img src="images/genre_romance.jpg" alt="Love & Romance Movies">
+            <h3>Love & Romance</h3>
+        </div>
+
+        <div class="collection-card">
+            <img src="images/genre_adventure.jpg" alt="Adventure Movies">
+            <h3>Adventure</h3>
+        </div>
+
+        <div class="collection-card">
+            <img src="images/genre_scifi.jpg" alt="Sci-Fi Movies">
+            <h3>Sci-Fi</h3>
+        </div>
+
+        <div class="collection-card">
+            <img src="images/genre_animation.jpg" alt="Animation & Comedy Movies">
+            <h3>Animation & Comedy</h3>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ABOUT US SECTION -->
+<section class="about" id="about">
+
+    <h2 class="heading">About <span>Us</span></h2>
+
+    <div class="about-content">
+        <p>
+            Welcome to MovieLand! We bring happiness to movie lovers
+            with exciting, high-definition and blockbuster films.
+
+            Our mission is to make every movie moment fun,
+            creative and memorable. We believe every movie fan
+            deserves stories that inspire imagination and wonder.
+        </p>
+    </div>
+
+    <!-- WHY CHOOSE US -->
+    <div class="why-us">
+
+        <h2>Why Choose Us</h2>
+
+        <div class="features">
+
+            <div class="feature">
+                <span>
+                    <i class="fa-solid fa-circle-check"></i>
+                </span>
+                <p>4K Ultra HD</p>
+            </div>
+
+            <div class="feature">
+                <span>
+                    <i class="fa-solid fa-rotate"></i>
+                </span>
+                <p>Easy Booking</p>
+            </div>
+
+            <div class="feature">
+                <span>
+                    <i class="fa-solid fa-headset"></i>
+                </span>
+                <p>24/7 Support</p>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+<!-- CONTACT SECTION -->
+<section class="contact" id="contact">
+
+    <h2 class="heading">Contact <span>Us</span></h2>
+
+    <p class="section-description">
+        Have questions? We would love to hear from you!
+    </p>
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <h3>Get In Touch</h3>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                pavankarra2712@gmail.com
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +91 8522965119
+            </p>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Madhapur Main Road, Hyderabad, India
+            </p>
+
+        </div>
+
+        <form class="contact-form">
+
+            <input type="text" placeholder="Your Name" required>
+
+            <input type="email" placeholder="Your Email" required>
+
+            <input type="text" placeholder="Subject">
+
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-box">
+            <h2>MovieLand!</h2>
+            <p>
+                Bringing thrills and happiness to every cinephile
+                through fun and creative cinema.
+            </p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <a href="#home">Home</a>
+            <a href="#toys">Movies</a>
+            <a href="#collections">Genres</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Follow Us</h3>
+
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        <p>©️ 2026 MovieLand. All Rights Reserved.</p>
+    </div>
+
+</footer>
+
+<script>
+    // Close mobile menu when an option is clicked or on scroll/swipe
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    // 1. Hide menu when any nav option is clicked
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (menuToggle) {
+                menuToggle.checked = false;
+            }
+        });
+    });
+
+    // 2. Hide menu when user scrolls down
+    window.addEventListener('scroll', () => {
+        if (menuToggle && menuToggle.checked) {
+            menuToggle.checked = false;
+        }
+    });
+
+    // 3. Hide menu when user swipes down on mobile touch screen
+    let touchStartY = 0;
+    window.addEventListener('touchstart', (e) => {
+        touchStartY = e.touches[0].clientY;
+    }, { passive: true });
+
+    window.addEventListener('touchmove', (e) => {
+        const touchCurrentY = e.touches[0].clientY;
+        if (menuToggle && menuToggle.checked && (touchCurrentY - touchStartY > 15)) {
+            menuToggle.checked = false;
+        }
+    }, { passive: true });
+
+    // 4. Hide menu when tapping outside the navbar
+    document.addEventListener('click', (e) => {
+        if (menuToggle && menuToggle.checked && !e.target.closest('.navbar')) {
+            menuToggle.checked = false;
+        }
+    });
+</script>
+
+</body>
+</html>

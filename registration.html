@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MovieLand - Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        .registration-page{
+            background: url(images/about_bg.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .register-box {
+            width: 450px;
+            max-width: 92%;
+            background: white;
+            padding: 35px;
+            border-radius: 20px;
+            text-align: center;
+            margin: 30px auto;
+        }
+
+        .register-box h1 {
+            color: #e50914;
+            margin-bottom: 10px;
+        }
+
+        .register-box h2 {
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .register-box p {
+            color: #777;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .register-box input[type="text"],
+        .register-box input[type="email"],
+        .register-box input[type="tel"],
+        .register-box input[type="password"] {
+            width: 100%;
+            padding: 13px;
+            margin: 8px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            outline: none;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        .register-box input:focus {
+            border-color: #e50914;
+        }
+
+        .gender-box {
+            text-align: left;
+            margin: 15px 0;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .gender-box label {
+            margin-right: 15px;
+        }
+
+        .gender-box input {
+            accent-color: #e50914;
+        }
+
+        .terms-box {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin: 15px 0;
+            font-size: 12px;
+            text-align: left;
+        }
+
+        .terms-box input {
+            accent-color: #e50914;
+        }
+
+        .register-box button {
+            width: 100%;
+            margin: 12px 0;
+        }
+
+        .account-text a {
+            color: #e50914;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .account-text a:hover {
+            text-decoration: underline;
+        }
+
+        .back-home {
+            display: inline-block;
+            margin-top: 10px;
+            color: #e50914;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        @media (max-width: 480px) {
+            .register-box {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body class="registration-page">
+
+    <div class="register-box">
+
+        <h1>MovieLand!</h1>
+
+        <h2>Create Account</h2>
+
+        <p>Join MovieLand and explore a world of cinema!</p>
+
+        <form action="#" method="post" onsubmit="return validatePassword()">
+
+            <input
+                type="text"
+                name="fullname"
+                placeholder="Enter Your Full Name"
+                required
+            >
+
+            <input
+                type="email"
+                name="email"
+                placeholder="Enter Your Email"
+                required
+            >
+
+            <input
+                type="tel"
+                name="phone"
+                placeholder="Enter Your Phone Number"
+                pattern="[0-9]{10}"
+                title="Enter a 10-digit phone number"
+                required
+            >
+
+            <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Create Password"
+                minlength="6"
+                required
+            >
+
+            <input
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+                placeholder="Confirm Password"
+                minlength="6"
+                required
+            >
+
+            <div class="terms-box">
+
+                <input type="checkbox" id="terms" name="terms" required>
+
+                <label for="terms">
+                    I agree to the Terms & Conditions
+                </label>
+
+            </div>
+
+            <button type="submit" class="btn">
+                Register Now
+            </button>
+
+        </form>
+
+        <p class="account-text">
+            Already have an account?
+            <a href="login.html">Login Here</a>
+        </p>
+
+        <a href="index.html" class="back-home">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back to Home
+        </a>
+
+    </div>
+
+    <script>
+        function validatePassword() {
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirmPassword").value;
+
+            if (password !== confirmPassword) {
+                alert("Password and Confirm Password do not match!");
+                return false;
+            }
+
+            alert("Registration form submitted successfully!");
+            return true;
+        }
+    </script>
+
+</body>
+</html>
