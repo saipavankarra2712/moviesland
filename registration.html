@@ -14,9 +14,26 @@
 
     <style>
         .registration-page{
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
             background: url(images/about_bg.jpg);
             background-size: cover;
             background-position: center;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .registration-wrapper {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 20px;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         .register-box {
@@ -26,7 +43,7 @@
             padding: 35px;
             border-radius: 20px;
             text-align: center;
-            margin: 30px auto;
+            margin: 0 auto;
         }
 
         .register-box h1 {
@@ -124,9 +141,10 @@
 
 <body class="registration-page">
 
-    <div class="register-box">
+    <div class="registration-wrapper">
+        <div class="register-box">
 
-        <h1>MovieLand!</h1>
+            <h1>MovieLand!</h1>
 
         <h2>Create Account</h2>
 
@@ -202,6 +220,54 @@
         </a>
 
     </div>
+    </div>
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div class="footer-box">
+                <h2>MovieLand!</h2>
+                <p>
+                    Bringing thrills and happiness to every cinephile
+                    through fun and creative cinema.
+                </p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <a href="index.html#home">Home</a>
+                <a href="index.html#toys">Movies</a>
+                <a href="index.html#collections">Genres</a>
+                <a href="index.html#about">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact Us</h3>
+                <p><i class="fa-solid fa-location-dot"></i> Madhapur Main Road, Hyderabad, India</p>
+                <p><i class="fa-solid fa-phone"></i> +91 8522965119</p>
+                <p><i class="fa-solid fa-envelope"></i> pavankarra2712@gmail.com</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Follow Us</h3>
+
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <p>©️ 2026 MovieLand. All Rights Reserved.</p>
+        </div>
+
+    </footer>
 
     <script>
         function validatePassword() {

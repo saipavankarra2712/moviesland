@@ -352,6 +352,7 @@ section {
     border-color: #e50914;
 }
 
+footer,
 .footer {
     background: #e50914;
     color: white;
@@ -360,28 +361,44 @@ section {
 
 .footer-content {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1.3fr 1fr;
     gap: 40px;
     padding-bottom: 35px;
 }
 
-.footer-box h2 {
+.footer-box h2,
+.footer-content h2,
+.footer-content > div h2 {
     color: white;
     margin-bottom: 15px;
 }
 
-.footer-box h3 {
+.footer-box h3,
+.footer-content h3,
+.footer-content > div h3 {
     margin-bottom: 18px;
     color: white;
 }
 
-.footer-box p {
+.footer-box p,
+.footer-content p,
+.footer-content > div p {
     color: white;
     line-height: 1.8;
     font-size: 14px;
 }
 
-.footer-box a {
+.footer-box p i,
+.footer-content p i,
+.footer-content > div p i {
+    margin-right: 8px;
+    width: 16px;
+    text-align: center;
+}
+
+.footer-box a,
+.footer-content a,
+.footer-content > div a {
     display: block;
     color: white;
     text-decoration: none;
@@ -389,23 +406,38 @@ section {
     transition: 0.3s;
 }
 
-.footer-box a:hover {
+.footer-box a:hover,
+.footer-content a:hover,
+.footer-content > div a:hover {
     color: lightpink;
+    padding-left: 4px;
 }
 
-.social-icons {
+.social-icons,
+.footer-content .social {
     display: flex;
     gap: 15px;
 }
 
-.social-icons a {
+.social-icons a,
+.footer-content .social a {
+    display: inline-block;
     font-size: 22px;
     color: white;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.social-icons a:hover,
+.footer-content .social a:hover {
+    color: lightpink;
+    transform: translateY(-3px);
+    padding-left: 0;
 }
 
 .copyright {
     text-align: center;
-    border-top: 1px solid white;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
     padding: 20px 0;
     color: white;
     font-size: 13px;
@@ -485,13 +517,14 @@ section {
 
     .footer-content {
         display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 15px;
-        text-align: center;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 25px;
+        text-align: left;
     }
 
-    .social-icons {
-        justify-content: center;
+    .social-icons,
+    .footer-content .social {
+        justify-content: flex-start;
     }
 
     section {
@@ -731,7 +764,13 @@ button {
 
     .footer-content {
         grid-template-columns: 1fr;
-        gap: 20px;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .social-icons,
+    .footer-content .social {
+        justify-content: center;
     }
 
     .product-image img {
